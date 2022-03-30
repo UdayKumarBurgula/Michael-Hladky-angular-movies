@@ -118,7 +118,7 @@
 
             loading="lazy"
             -->
-            <iframe [bypassSrc]="movie?.videoUrl" width="460" height="230"></iframe>
+            <iframe loading="lazy" [bypassSrc]="movie?.videoUrl" width="460" height="230"></iframe>
 
           </dialog>
           <button data-uf="back" class="btn primary-button" (click)="back()">
