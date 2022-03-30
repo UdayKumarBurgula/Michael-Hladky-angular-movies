@@ -21,6 +21,7 @@
   />
   <link rel="preconnect" href="https://api.themoviedb.org/" crossorigin="" />
   -->
+  <link rel="preconnect" href="https://api.themoviedb.org/" crossorigin="" />
   <link rel="manifest" href="manifest.webmanifest" />
   <meta name="theme-color" content="#1976d2" />
 </head>
@@ -30,6 +31,8 @@
 Preload important images placed outside the viewport
 Prefetch resources needed after router navigation event
 
+
+-->
 <link
   rel="preload"
   as="image"
@@ -41,11 +44,12 @@ Prefetch resources needed after router navigation event
   href="assets/images/no_poster_available.jpg"
 />
 <link rel="preload" as="image" href="/assets/images/logo.svg" />
--->
 <!--
 **🚀 Perf Tip for CLS and LCP:**
 Inline the styles for the app loading spinner to avoid flickering.
 
+
+-->
 <style>
   .launcher {
     display: flex;
@@ -55,7 +59,6 @@ Inline the styles for the app loading spinner to avoid flickering.
     height: 100%;
   }
 </style>
--->
 <body class="light">
 <app-root>
   <div class="launcher">
