@@ -10,7 +10,7 @@ import {
   selector: 'ui-backdrop',
   template: ``,
   styleUrls: ['./backdrop.component.scss'],
-  changeDetection: ChangeDetectionStrategy.Default,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.Emulated,
 })
 export class BackdropComponent {

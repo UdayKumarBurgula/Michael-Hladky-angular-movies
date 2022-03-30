@@ -12,7 +12,7 @@ import {
     <a class="btn" routerLink="/list/category/popular">See popular</a>
   </div>`,
   styleUrls: ['./not-found-page.component.scss'],
-  changeDetection: ChangeDetectionStrategy.Default,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.Emulated,
 })
 export class NotFoundPageComponent {}

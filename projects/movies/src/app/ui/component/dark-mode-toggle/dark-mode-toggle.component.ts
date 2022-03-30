@@ -29,7 +29,7 @@ import {
     </div>
   `,
   styleUrls: ['dark-mode-toggle.component.scss'],
-  changeDetection: ChangeDetectionStrategy.Default,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.Emulated,
 })
 export class DarkModeToggleComponent extends RxState<{

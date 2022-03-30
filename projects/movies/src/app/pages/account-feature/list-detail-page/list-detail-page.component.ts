@@ -4,7 +4,7 @@ import { ListDetailAdapter } from './list-detail-page.adapter';
   selector: 'ct-list-detail-page',
   templateUrl: './list-detail-page.component.html',
   styleUrls: ['./list-detail-page.component.scss'],
-  changeDetection: ChangeDetectionStrategy.Default,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ListDetailPageComponent {
   readonly tabs = [

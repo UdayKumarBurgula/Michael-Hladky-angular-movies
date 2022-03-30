@@ -19,7 +19,7 @@ import { RxEffects } from '@rx-angular/state/effects';
   selector: 'ct-movie',
   templateUrl: './movie-detail-page.component.html',
   styleUrls: ['./movie-detail-page.component.scss'],
-  changeDetection: ChangeDetectionStrategy.Default,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.Emulated,
   providers: [RxEffects],
 })

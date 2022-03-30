@@ -13,7 +13,7 @@ import {
   selector: 'ct-person',
   templateUrl: './account-list-page.component.html',
   styleUrls: ['./account-list-page.component.scss'],
-  changeDetection: ChangeDetectionStrategy.Default,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.Emulated,
 })
 export class AccountListPageComponent {

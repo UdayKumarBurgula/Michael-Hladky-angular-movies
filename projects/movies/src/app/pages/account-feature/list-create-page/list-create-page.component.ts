@@ -60,7 +60,7 @@ import { ListCreatePageAdapter } from './list-create-page.adapter';
     './list-create-page.component.scss',
     '../../../ui/component/button/_button.scss',
   ],
-  changeDetection: ChangeDetectionStrategy.Default,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ListCreateEditPageComponent implements OnDestroy {
   constructor(public adapter: ListCreatePageAdapter) {}

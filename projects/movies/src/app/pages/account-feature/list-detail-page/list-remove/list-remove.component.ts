@@ -20,7 +20,7 @@ type Actions = {
   selector: 'app-list-remove',
   templateUrl: './list-remove.component.html',
   styleUrls: ['./list-remove.component.scss'],
-  changeDetection: ChangeDetectionStrategy.Default,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [RxActionFactory],
 })
 export class ListRemoveComponent

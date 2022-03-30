@@ -8,7 +8,7 @@ import {
   selector: 'ui-form-control',
   template: ` <ng-content></ng-content>`,
   styles: ['./form-control.component.scss'],
-  changeDetection: ChangeDetectionStrategy.Default,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.Emulated,
 })
 export class FormControlComponent {}

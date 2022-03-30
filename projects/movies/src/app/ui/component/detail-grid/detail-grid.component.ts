@@ -15,7 +15,7 @@ import {
     </div>
   `,
   styleUrls: ['./detail-grid.component.scss'],
-  changeDetection: ChangeDetectionStrategy.Default,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.Emulated,
 })
 export class DetailGridComponent {}
