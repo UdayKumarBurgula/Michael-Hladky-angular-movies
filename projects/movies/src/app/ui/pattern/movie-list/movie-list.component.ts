@@ -21,7 +21,7 @@ type UiActions = { paginate: boolean };
 @Component({
   selector: 'ui-movie-list',
   template: `
-    <ui-grid-list *ngIf="moviesListVisible$ | async; else noData">
+    <ui-grid-list *rxIf="moviesListVisible$; else noData">
       <!--
           **🚀 Perf Tip for TBT:**
           Use \`rxFor\` in favour of \`ngFor\` to get non blocking rendering of lists.
@@ -29,11 +29,7 @@ type UiActions = { paginate: boolean };
       -->
       <a
         class="ui-grid-list-item"
-        *ngFor="
-          let movie of movies$ | async;
-          index as idx;
-          trackBy: trackByMovieId
-        "
+        *rxFor="let movie of movies$; index as idx; trackBy: trackByMovieId"
         [routerLink]="['/detail/movie', movie.id]"
         [attr.data-uf]="'movie-' + idx"
       >
